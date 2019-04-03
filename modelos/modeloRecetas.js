@@ -9,7 +9,7 @@ const nuevaReceta = (receta, callback)=>{
 };
 
 const consultaReceta = (id, callback)=>{
-	conexion.query('SELECT * FROM recetas WHERE id_receta=?',id, (error, resultado)=>{
+	conexion.query('SELECT * FROM recetas WHERE id_receta=?', id, (error, resultado)=>{
 		return callback(error, resultado);
 	})
 };
